@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-template-areas: 
+    "header header"
+    "sidebar main"
+    "footer footer";
+}
+
+.header {
+    grid-area: header;
+    max-width: 100%;
+    padding: 1rem 16em;
+    margin-bottom: 2em;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 0 10px #e1e1e1;
+    align-items: center;
+}
+
+.main {
+    grid-area: main;
+}
+
+.card-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    border: 2px solid #e1e1e1;
+    border-radius: 16px;
+    padding: 8px;
+}
+
+.card img {
+    border-radius: 16px;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 4em;
+}
+
+.profile-pic {
+    align-items: center;
+}
+
+.profile-pic img {
+    border-radius: 96px;
+}
+
+.links a img{
+    border-radius: 16px;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 1rem 10em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
