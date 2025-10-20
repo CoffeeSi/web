@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jQuery</title>
+  <style>
+    button {
+      margin: 6px 8px 6px 0;
+      padding: 8px 12px;
+      cursor: pointer
+    }
+
+    #accordion {
+      max-width: 720px;
+      margin-top: 12px
+    }
+
+    .acc-item {
+      border-bottom: 1px solid #e2e2e2
+    }
+
+    .acc-header {
+      padding: 12px 14px;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center
+    }
+
+    .acc-content {
+      padding: 12px 14px;
+      background: #efefef;
+      display: none
+    }
+
+    .acc-header:focus { outline: 2px solid #8ab4ff }
+
+    .chev {
+      font-size: 14px
+    }
+  </style>
+</head>
+
+<body>
+  <h1>jQuery</h1>
+  <p id="text"></p>
+  <button class="btn">Click me</button>
+  <hr>
+  <p id="info-text">jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document
+    traversal and
+    manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude
+    of browsers. With a combination of versatility and extensibility, jQuery has changed the way that millions of people
+    write JavaScript.</p>
+  <button id="btn-hide">Hide</button>
+  <button id="btn-show">Show</button>
+  <button id="btn-toggle">Toggle</button>
+  <hr>
+  <img class="img-cat" height="512" src="assets/cat.jpeg" alt="Cat"><br>
+  <button id="btn-fadein">Show</button>
+  <button id="btn-fadeout">Hide</button>
+  <button id="btn-fadetoggle">Toggle</button>
+  <hr>
+  <div id="panel">
+    <p>This is the panel content that can be shown or hidden using jQuery slide methods.</p>
+  </div>
+  <button id="btn-slideup">Slide Up</button>
+  <button id="btn-slidedown">Slide Down</button>
+  <button id="btn-slidetoggle">Slide Toggle</button>
+  <hr>
+  <div class="elements"></div>
+  <button id="btn-add">Add Item</button>
+  <button id="btn-prepend">Add first</button>
+  <button id="btn-remove">Remove Item</button>
+  <hr>
+  <img id="img-change" height="400" src="assets/cat.jpeg" alt="Cat"><br>
+  <button id="btn-changeImg">Change image</button><br>
+  <a id="link" href="https://www.example.com">Visit Example.com</a><br>
+  <button id="btn-changeLink">Change Link</button>
+  <hr>
+  <form>
+    <input type="text" name="name" id="input-name" placeholder="Name">
+    <input type="email" name="email" id="input-email" placeholder="Email">
+  </form>
+  <p id="output-name"></p>
+  <p id="output-email"></p>
+  <hr>
+  <div id="square" style="position: relative; width: 100px; height: 100px; background-color: coral;"></div>
+  <hr>
+  <div id="square2" style="position: relative; width: 200px; height: 200px; background-color: red;"></div>
+  <hr>
+  <div id="square3" style="position: relative; width: 150px; height: 150px; background-color: rgb(255, 117, 193);">
+  </div>
+  <hr>
+  <h2>Accordion Menu</h2>
+  <p>How cats meow in different languages</p>
+  <div id="accordion">
+    <div class="acc-item">
+      <div class="acc-header" tabindex="0" data-target="#acc1">English<div class="chev">▸</div>
+      </div>
+      <div class="acc-content" id="acc1">Meow meow meow meow</div>
+    </div>
+    <div class="acc-item">
+      <div class="acc-header" tabindex="0" data-target="#acc2">Turkish<div class="chev">▸</div>
+      </div>
+      <div class="acc-content" id="acc2">Miyav miyav miyav miyav</div>
+    </div>
+    <div class="acc-item">
+      <div class="acc-header" tabindex="0" data-target="#acc3">Greek<div class="chev">▸</div>
+      </div>
+      <div class="acc-content" id="acc3">νιάου νιάου νιάου νιάου νιάου νιάου</div>
+    </div>
+    </p>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>
